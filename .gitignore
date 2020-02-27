@@ -1,0 +1,16 @@
+###
+.gradle
+gradle
+.idea
+.settings
+bin
+build
+out
+.classpath
+.gitignore.swp
+.project
+.DS_Store
+logs
+gradlew
+gradlew.bat
+log-path_IS_UNDEFINED
