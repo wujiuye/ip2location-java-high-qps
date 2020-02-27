@@ -20,6 +20,45 @@ DB19-IP-COUNTRY-REGION-CITY-LATITUDE-LONGITUDE-ISP-DOMAIN-MOBILE.CSV
 * 1、扩展性强，当前支持redis、es缓存ip2库数据；
 * 2、满足于高并发服务根据ip查询位置信息的场景。
 
+### 项目中使用，添加依赖
+
+* Gradle
+
+Step 1. Add it in your root build.gradle at the end of repositories:
+```groovy
+    allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+Step 2. Add the dependency
+```groovy
+    dependencies {
+	        implementation 'com.github.wujiuye:ip2location-java-high-qps:1.1.2'
+	}
+```
+
+* maven
+
+```xml
+    <repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+```
+Step 2. Add the dependency
+```xml
+    <dependency>
+	    <groupId>com.github.wujiuye</groupId>
+	    <artifactId>ip2location-java-high-qps</artifactId>
+	    <version>1.1.2</version>
+	</dependency>
+```
+
 ### 配置使用数据源
 
 选择数据源类型，es|redis
